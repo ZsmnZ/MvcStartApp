@@ -4,10 +4,10 @@ using MvcStartApp.Models.Repository;
 
 namespace MvcStartApp.Controllers
 {
-    public class LogsController : Controller
+    public class RequestController : Controller
     {
-        private readonly ILogRepository _logrepo;
-        public LogsController(ILogRepository logrepo)
+        private readonly IRequestRepository _logrepo;
+        public RequestController(IRequestRepository logrepo)
         {
             _logrepo = logrepo;
         }

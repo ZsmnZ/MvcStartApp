@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 string? connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<BlogContext>(options=>options.UseSqlServer(connection));
 builder.Services.AddScoped<IBlogRepository, BlogRepository>();
-builder.Services.AddScoped<ILogRepository,LogRepository>();
+builder.Services.AddScoped<IRequestRepository,RequestRepository>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

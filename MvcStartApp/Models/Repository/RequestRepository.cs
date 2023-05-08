@@ -3,11 +3,12 @@ using MvcStartApp.Models.Db;
 
 namespace MvcStartApp.Models.Repository
 {
-    public class LogRepository : ILogRepository
+    public class RequestRepository : IRequestRepository
+       
     {
         private readonly BlogContext context;
 
-        public LogRepository(BlogContext context)
+        public RequestRepository(BlogContext context)
         {
             this.context = context;
         }

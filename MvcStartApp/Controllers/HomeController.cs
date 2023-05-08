@@ -8,9 +8,9 @@ namespace MvcStartApp.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IBlogRepository _repo;
-        private readonly ILogRepository _logRepository;
+        private readonly IRequestRepository _logRepository;
 
-        public HomeController(ILogger<HomeController> logger, IBlogRepository repo, ILogRepository logRepository)
+        public HomeController(ILogger<HomeController> logger, IBlogRepository repo, IRequestRepository logRepository)
         {
             _logger = logger;
             _repo = repo;

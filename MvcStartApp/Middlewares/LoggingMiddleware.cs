@@ -14,7 +14,7 @@ namespace MvcStartApp.Middlewares
            
 
         }
-        public async Task InvokeAsync(HttpContext context, ILogRepository logRepository)
+        public async Task InvokeAsync(HttpContext context, IRequestRepository logRepository)
         {
 
             var log = new Request()

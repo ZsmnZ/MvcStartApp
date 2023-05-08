@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "View logs";
+}
+<h3>Logs:</h3>
+ <table>
+    <tr>
+            <td>Идентификатор</td>
+            <td>Дата</td>
+        <td>Путь</td>
+        </tr>
+    @foreach (var req in Model)
+    {
+                <tr>
+                    <td>@req.Id</td>
+                    <td>@req.Date</td>
+                    <td>@req.Url</td>
+                </tr>
+    }
+    </table>
